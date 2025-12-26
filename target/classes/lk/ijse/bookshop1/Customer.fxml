@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Customercontrol" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #d4a7e5;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookshop1.controller.CustomerController">
+    <children>
+        <VBox alignment="TOP_RIGHT" prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: #9cd9ec;">
+            <children>
+                <TextField alignment="CENTER" editable="false" prefHeight="78.0" prefWidth="800.0" style="-fx-background-color: #d4a7e5;" text="Customer Management">
+                    <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                    </font>
+                </TextField>
+            </children>
+        </VBox>
+        <Pane layoutX="-3.0" layoutY="71.0" prefHeight="235.0" prefWidth="800.0" style="-fx-background-color: #d4a7e5;">
+            <children>
+                <VBox layoutX="106.0" layoutY="17.0" prefHeight="198.0" prefWidth="239.0" spacing="5">
+                    <children>
+                        <Label text="ID">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="cmbCustomerID" prefHeight="26.0" prefWidth="239.0" />
+                        <Label text="Name">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="nameField" />
+                        <Label text="Phone">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="contactField" />
+                    </children>
+                </VBox>
+                <VBox layoutX="415.0" layoutY="17.0" prefHeight="198.0" prefWidth="200.0" spacing="5">
+                    <children>
+                        <Label text="Email">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="emailField" prefHeight="26.0" prefWidth="200.0" />
+                        <Label text="Address">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="addressField" prefHeight="26.0" prefWidth="200.0" />
+                        <Button mnemonicParsing="false" onAction="#printPDF" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: #681986; -fx-background-radius: 30;" text="Print/Export PDF">
+                            <textFill>
+                                <LinearGradient endX="0.3749999638759728" endY="0.7196969660845671" startY="0.24242430022268582">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.8671604990959167" green="1.0" blue="0.003703703638166189" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.006729475100942127">
+                                            <color>
+                                                <Color red="0.9578947424888611" green="0.042573098093271255" blue="0.9578947424888611" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.889636608344549">
+                                            <color>
+                                                <Color red="0.9684210419654846" green="0.9397270679473877" blue="0.9397270679473877" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="1.0" green="0.9843137264251709" blue="0.9843137264251709" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox layoutX="647.0" layoutY="-4.0" prefHeight="223.0" prefWidth="100.0">
+                    <children>
+                        <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="277.0" prefWidth="700.0" style="-fx-background-color: #681986;" text="Update">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <textFill>
+                                <LinearGradient endX="0.3749999638759728" endY="0.7196969660845671" startY="0.24242430022268582">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.8671604990959167" green="1.0" blue="0.003703703638166189" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.006729475100942127">
+                                            <color>
+                                                <Color red="0.9578947424888611" green="0.042573098093271255" blue="0.9578947424888611" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.889636608344549">
+                                            <color>
+                                                <Color red="0.9684210419654846" green="0.9397270679473877" blue="0.9397270679473877" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="1.0" green="0.9851852059364319" blue="0.9851852059364319" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Button>
+                        <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#handleSave" prefHeight="277.0" prefWidth="700.0" style="-fx-background-color: #681986;" text="Save">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <textFill>
+                                <LinearGradient endX="0.3749999638759728" endY="0.7196969660845671" startY="0.24242430022268582">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.8671604990959167" green="1.0" blue="0.003703703638166189" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.006729475100942127">
+                                            <color>
+                                                <Color red="0.9578947424888611" green="0.042573098093271255" blue="0.9578947424888611" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.889636608344549">
+                                            <color>
+                                                <Color red="0.9684210419654846" green="0.9397270679473877" blue="0.9397270679473877" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="1.0" green="0.9851852059364319" blue="0.9851852059364319" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Button>
+                        <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#handleDelete" prefHeight="277.0" prefWidth="700.0" style="-fx-background-color: #681986;" text="Delete">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <textFill>
+                                <LinearGradient endX="0.3749999638759728" endY="0.7196969660845671" startY="0.24242430022268582">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.8671604990959167" green="1.0" blue="0.003703703638166189" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.006729475100942127">
+                                            <color>
+                                                <Color red="0.9578947424888611" green="0.042573098093271255" blue="0.9578947424888611" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.889636608344549">
+                                            <color>
+                                                <Color red="0.9684210419654846" green="0.9397270679473877" blue="0.9397270679473877" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="1.0" green="0.9843137264251709" blue="0.9843137264251709" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Button>
+                        <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#handleReset" prefHeight="277.0" prefWidth="700.0" style="-fx-background-color: #681986;" text="Reset">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <textFill>
+                                <LinearGradient endX="0.3749999638759728" endY="0.7196969660845671" startY="0.24242430022268582">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.8671604990959167" green="1.0" blue="0.003703703638166189" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.006729475100942127">
+                                            <color>
+                                                <Color red="0.9578947424888611" green="0.042573098093271255" blue="0.9578947424888611" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.889636608344549">
+                                            <color>
+                                                <Color red="0.9684210419654846" green="0.9397270679473877" blue="0.9397270679473877" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="1.0" green="0.9851852059364319" blue="0.9851852059364319" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+        <Pane layoutY="300.0" prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #d4a7e5;">
+            <children>
+                <TableView fx:id="customerTable" layoutX="27.0" layoutY="44.0" prefHeight="206.0" prefWidth="728.0">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="90.39999008178711" text="ID" />
+                        <TableColumn fx:id="colName" prefWidth="121.5999755859375" text="Name" />
+                        <TableColumn fx:id="colPhone" prefWidth="174.40003967285156" text="Phone" />
+                        <TableColumn fx:id="colEmail" prefWidth="183.99993896484375" text="Email" />
+                        <TableColumn fx:id="colAddress" prefWidth="155.20001220703125" text="Address" />
+                    </columns>
+                </TableView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
